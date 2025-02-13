@@ -44,7 +44,7 @@ export class ExcludeCodeDto extends OmitType(CreateMonsterDto, [
   'code',
 ] as const) {
   @Exclude()
-  code?: number;
+  code?: string;
 }
 
 export class UpdateMonsterDto extends IntersectionType(
